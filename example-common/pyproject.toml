@@ -1,0 +1,20 @@
+[tool.poetry]
+
+name = "example-common"
+version = "0.1.0"
+description = ""
+authors = ["Mark S. <the@wondersmith.dev>"]
+readme = "README.md"
+
+packages = [
+    {include = "example_common"}
+]
+
+[tool.poetry.dependencies]
+
+python = "~3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

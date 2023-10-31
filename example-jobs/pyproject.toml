@@ -1,0 +1,20 @@
+[tool.poetry]
+
+name = "example-jobs"
+version = "0.1.0"
+description = ""
+authors = ["Mark S. <the@wondersmith.dev>"]
+readme = "README.md"
+
+packages = [
+    {include = "example_jobs"}
+]
+
+[tool.poetry.dependencies]
+
+python = "~3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

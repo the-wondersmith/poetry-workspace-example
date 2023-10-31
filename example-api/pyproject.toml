@@ -1,0 +1,28 @@
+[tool.poetry]
+
+name = "example-api"
+version = "0.1.0"  # x-release-please-version
+description = ""
+authors = ["Mark S. <the@wondersmith.dev>"]
+readme = "README.md"
+
+packages = [
+    {include = "example_api"}
+]
+
+[tool.poetry.dependencies]
+
+python = "~3.11"
+example_models = { path = "../example-models/", develop = true }
+fastapi = { version = "^0.104", extras = ["all"] }
+more-itertools = "^10"
+
+
+[tool.poetry.group.dev.dependencies]
+
+httpx = { version = "^0.25", extras = ["http2"] }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
